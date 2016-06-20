@@ -116,7 +116,6 @@ cur = db.cursor()
 ##############################################################################################################################
 
 meter = TDS()
-
 def whichQuery(idS, idQ):
     #id 1 procurar por familia
     if idS == 1:
@@ -136,6 +135,7 @@ def whichQuery(idS, idQ):
     else:
         print("ID não existente")
 
+whichQuery(1, 1)
 
 #----------------------------------------------------Não mudar nada daqui pra baixo---------------------------------------------------
 #----------------------------------------------A menos que voce saiba o que está fazendo----------------------------------------------
