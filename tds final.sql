@@ -39,7 +39,7 @@ DROP TABLE IF EXISTS `tds`.`usuario` ;
 CREATE TABLE IF NOT EXISTS `tds`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(45) NULL,
-  `password` VARCHAR(45) NULL,
+  `password` VARCHAR(100) NULL,
   `grupo_id` INT NOT NULL,
   PRIMARY KEY (`id`, `grupo_id`),
   INDEX `fk_usuario_grupo_idx` (`grupo_id` ASC),
