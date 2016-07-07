@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `tds`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(45) NULL,
   `password` VARCHAR(100) NULL,
-  `grupo_id` INT NOT NULL,
+  `grupo_id` INT NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`, `grupo_id`),
   INDEX `fk_usuario_grupo_idx` (`grupo_id` ASC),
   CONSTRAINT `fk_usuario_grupo`
